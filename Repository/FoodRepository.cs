@@ -152,35 +152,6 @@ namespace PetShopAPI.Repository
 
         }
 
-        //public void GetFoodForAnimals(int? animalId)
-        //{
-        //    using (db)
-        //    {
-        //        using (var cmd = db.Database.GetDbConnection().CreateCommand())
-        //        {
-        //            cmd.CommandText = "GetFoodForAnimals";
-        //            cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-        //            var animalIdParam = cmd.CreateParameter();
-        //            animalIdParam.ParameterName = "AnimalId";
-        //            animalIdParam.Value = animalId;
-
-        //            cmd.Parameters.Add(animalIdParam);
-
-        //            db.Database.OpenConnection();
-        //            using (var result = cmd.ExecuteReader())
-        //            {
-        //                if (result.HasRows)
-        //                {
-        //                    var v = result.ReadAsync();
-
-        //                }
-        //            }
-        //        }
-
-        //    }
-        //}
-
         public async Task<int> AddFoodKind(FoodKind foodKind)
         {
             if (db != null)
