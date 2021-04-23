@@ -9,5 +9,6 @@ namespace PetShopAPI.ViewModel
         public string Description { get; set; }
         public int? AnimalId { get; set; }
         public string AnimalName { get; set; }
+        public decimal? Price { get; set; }
     }
 }
